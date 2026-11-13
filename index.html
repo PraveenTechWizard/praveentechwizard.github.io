@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J. Praveen Kumar | Unity Developer</title>
+<meta name="description" content="Portfolio of J. Praveen Kumar, a Unity developer building games in C#. Gameplay videos, projects and contact details.">
+<meta property="og:title" content="J. Praveen Kumar | Unity Developer">
+<meta property="og:description" content="I build games and interactive experiences using Unity and C#.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1a22'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23f2b366'%3EJP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+<div class="progress" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">J. Praveen Kumar</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#home">Home</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1><span>Hi,</span> <span>I’m J. Praveen Kumar.</span></h1>
+      <p class="role">Unity Developer</p>
+      <p class="intro">I build games and interactive experiences using Unity and C#.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore My Games</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      <ul class="social" aria-label="Social links" id="social"></ul>
+    </div>
+    <figure class="portrait">
+      <div class="disc"><img src="assets/img/profile.webp" alt="Portrait of J. Praveen Kumar" width="640" height="640" onerror="this.parentElement.parentElement.classList.add('empty')"></div>
+      <figcaption class="todo">Add your photo: assets/img/profile.webp</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="reveal">My Games</h2>
+    <p class="sub reveal">Press play on any game to watch it right here.</p>
+    <div id="project-list"></div>
+
+    <div class="mech" id="mechanics" aria-labelledby="mech-title">
+      <h2 id="mech-title" class="reveal">Game Mechanics</h2>
+      <p class="sub reveal">Small prototypes where I practise one idea at a time. These are not finished games.</p>
+      <div class="carousel reveal" role="region" aria-roledescription="carousel" aria-label="Game mechanic videos">
+        <div class="car-track" id="car-track" tabindex="0"></div>
+        <div class="car-ctrl">
+          <button type="button" class="car-btn" id="car-prev" aria-label="Previous mechanic">&#8592;</button>
+          <div class="dots" id="car-dots"></div>
+          <span class="count" id="car-count" aria-live="polite"></span>
+          <button type="button" class="car-btn" id="car-next" aria-label="Next mechanic">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="reveal">Skills</h2>
+    <div class="skills" id="skill-list"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <h2 class="reveal">About</h2>
+    <div class="prose reveal">
+      <p>I’m a Unity Developer with a background in computer science and a strong interest in game programming. I enjoy building gameplay mechanics, experimenting with ideas, and turning concepts into playable experiences.</p>
+      <p>I’m currently pursuing my M.Sc. in Game Technology and continuously improving my skills in Unity and C#.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="big reveal">Let’s Create Something.</h2>
+    <ul class="clist reveal" id="contact-list"></ul>
+    <div class="reveal" id="resume-slot"></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 J. Praveen Kumar. Built by hand with HTML, CSS and JavaScript.</div></footer>
+
+<dialog id="lightbox" aria-label="Screenshot viewer"><img alt=""><button type="button" class="btn" id="lb-close">Close</button></dialog>
+<noscript><p class="wrap">This portfolio needs JavaScript to show the games. Please enable it.</p></noscript>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
